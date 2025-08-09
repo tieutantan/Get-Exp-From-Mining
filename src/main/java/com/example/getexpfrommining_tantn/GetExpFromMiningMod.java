@@ -16,7 +16,7 @@ import net.minecraft.tags.BlockTags;
 public final class GetExpFromMiningMod {
 
     public static final String MODID = "getexpfrommining_tantn";
-    private static final int XP_PER_BLOCK = 1;
+    private static final int XP_PER_BLOCK = 4;
 
     public GetExpFromMiningMod(final IEventBus modEventBus) {
         // Đăng ký handler lên game event bus; handler tự lọc server-side.
