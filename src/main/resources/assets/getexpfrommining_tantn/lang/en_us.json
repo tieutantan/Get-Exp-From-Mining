@@ -1,0 +1,13 @@
+{
+  "itemGroup.getexpfrommining_tantn": "Example Mod Tab",
+  "block.getexpfrommining_tantn.example_block": "Example Block",
+  "item.getexpfrommining_tantn.example_item": "Example Item",
+
+  "getexpfrommining_tantn.configuration.title": "Get EXP from Mining Configs",
+  "getexpfrommining_tantn.configuration.section.getexpfrommining_tantn.common.toml": "Get EXP from Mining Configs",
+  "getexpfrommining_tantn.configuration.section.getexpfrommining_tantn.common.toml.title": "Get EXP from Mining Configs",
+  "getexpfrommining_tantn.configuration.items": "Item List",
+  "getexpfrommining_tantn.configuration.logDirtBlock": "Log Dirt Block",
+  "getexpfrommining_tantn.configuration.magicNumberIntroduction": "Magic Number Text",
+  "getexpfrommining_tantn.configuration.magicNumber": "Magic Number"
+}
