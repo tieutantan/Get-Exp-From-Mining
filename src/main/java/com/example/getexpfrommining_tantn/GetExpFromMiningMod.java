@@ -21,7 +21,7 @@ import net.neoforged.neoforge.event.level.BlockEvent;
 public final class GetExpFromMiningMod {
 
     public static final String MODID = "getexpfrommining_tantn";
-    private static final int XP_PER_BLOCK = 4;
+    private static final int XP_PER_BLOCK = 3;
 
     @SuppressWarnings("unchecked")
     private static final TagKey<Block>[] STONE_TAGS = new TagKey[]{
@@ -51,10 +51,18 @@ public final class GetExpFromMiningMod {
         if (!isStoneLike) return;
 
         final ServerLevel sl = sp.serverLevel();
-        // spawn ngay sát chân → nhặt tức thì, Mending kích hoạt
-        final Vec3 spot = new Vec3(sp.getX(), sp.getBoundingBox().minY + 0.10, sp.getZ());
 
-        // 1.21.1 có overload sử dụng Vec3
+        // Lấy hướng nhìn chuẩn hóa
+        final Vec3 lookDir = sp.getLookAngle().normalize();
+
+        // Tính vị trí spawn: trước mặt 0.5 block, cao hơn mặt đất 0.4 block
+        final Vec3 spot = new Vec3(
+            sp.getX() + lookDir.x * 0.5,
+            sp.getBoundingBox().minY + 0.4,
+            sp.getZ() + lookDir.z * 0.5
+        );
+
+        // Spawn orb ở vị trí vừa tính
         ExperienceOrb.award(sl, spot, XP_PER_BLOCK);
     }
 }
