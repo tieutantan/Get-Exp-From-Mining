@@ -4,6 +4,7 @@
 - Get 1 exp on every block releted trees break.
 - All orb exp works with mending.
 
+- `.\gradlew --refresh-dependencies`
 - `.\gradlew clean`
 - `.\gradlew runClient`
 - `.\gradlew build`

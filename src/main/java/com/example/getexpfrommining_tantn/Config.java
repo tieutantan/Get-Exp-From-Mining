@@ -1,4 +1,4 @@
-package com.example.getexpfrommining_tantn;
+package com.example.tantn_getexpfromnature;
 
 import java.util.List;
 import net.minecraft.core.registries.BuiltInRegistries;

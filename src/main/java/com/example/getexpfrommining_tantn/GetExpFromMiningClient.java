@@ -1,4 +1,4 @@
-package com.example.getexpfrommining_tantn;
+package com.example.tantn_getexpfromnature;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
