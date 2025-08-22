@@ -21,7 +21,7 @@ import net.neoforged.neoforge.event.level.BlockEvent;
 public final class GetExpFromMiningMod {
 
     public static final String MODID = "getexpfrommining_tantn";
-    private static final int XP_PER_BLOCK = 3;
+    private static final int XP_PER_BLOCK = 2;
 
     @SuppressWarnings("unchecked")
     private static final TagKey<Block>[] STONE_TAGS = new TagKey[]{
