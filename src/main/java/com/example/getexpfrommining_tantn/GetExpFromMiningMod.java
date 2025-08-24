@@ -21,7 +21,7 @@ import net.neoforged.neoforge.event.level.BlockEvent;
 public final class GetExpFromMiningMod {
 
     public static final String MODID = "tantn_getexpfromnature";
-    private static final int XP_PER_STONE_BLOCK = 2;
+    private static final int XP_PER_STONE_BLOCK = 1;
     private static final int XP_PER_TREE_BLOCK = 1;
 
     @SuppressWarnings("unchecked")
